@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/89d5ed4f-f655-4793-8e65-78b2b3401d38/deploy-status)](https://app.netlify.com/sites/first-project-dad-jokes/deploys)
 # first-project
 
 ## Build Setup
