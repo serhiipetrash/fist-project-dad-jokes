@@ -1,7 +1,20 @@
 <template>
-  <div>
-    <h2>Welcome to the best corny dad jokes app on the web</h2>
-  </div>
+
+  <section class="hero is-halfheight">
+    <div class="hero-body">
+      <div>
+        <h1 class="title">
+          Dad Jokes
+        </h1>
+        
+        <h2 class="subtitle">
+          Welcome to the best corny dad jokes app on the web
+        </h2>
+
+      </div>
+    </div>
+  </section>
+
 </template>
 
 <script>

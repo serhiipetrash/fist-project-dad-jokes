@@ -1,19 +1,32 @@
 <template>
-  <header class="header">
-    <h1 class="title">Dad Jokes</h1>
-    <ul>
-      <li>
-        <nuxt-link to="/">Home</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/jokes">Jokes</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/about">About</nuxt-link>
-      </li>
-    </ul>
-  </header>
+  <b-navbar class="is-warning">
+    <template #brand>
+      <!-- <b-navbar-item tag="nuxt-link" to="/">
+            <h1 class="title">Dad Jokes</h1>
+          </b-navbar-item> -->
+    </template>
+    <template #start>
+      <b-navbar-item tag="nuxt-link" to="/">
+        Home
+      </b-navbar-item>
+      <b-navbar-item tag="nuxt-link" to="/jokes">
+        Jokes
+      </b-navbar-item>
+      <b-navbar-item tag="nuxt-link" to="/about">
+        About
+      </b-navbar-item>
+      <b-navbar-dropdown label="Info">
+        <b-navbar-item href="/about">
+          About
+        </b-navbar-item>
+        <b-navbar-item href="#">
+          Contact
+        </b-navbar-item>
+      </b-navbar-dropdown>
+    </template>
+  </b-navbar>
 </template>
+
 
 <script>
 export default {
@@ -21,30 +34,3 @@ export default {
 };
 </script>
 
-<style>
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px dotted #ccc;
-}
-
-.header .title {
-  font-size: 3rem;
-  color: #526488;
-}
-
-.header ul {
-  display: flex;
-}
-
-.header a {
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  padding: 0.3rem 1rem;
-  margin-right: 0.5rem;
-}
-</style>
