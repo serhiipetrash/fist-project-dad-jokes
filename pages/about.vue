@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="box">
     <h1>About DadJokes</h1>
     <p>This is an app that displays corny dad jokes</p>
   </div>

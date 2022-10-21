@@ -1,7 +1,17 @@
 <template>
+  
   <form @submit.prevent="onSubmit">
-    <input type="text" v-model="text" placeholder="Search Jokes...">
-    <input type="submit" value="Search Jokes">
+    <div class="field has-addons">
+      <div class="control">
+        <input class="input" type="text" v-model="text" placeholder="Search Jokes...">
+      </div>
+      <div class="control">
+        <a class="button is-info">
+          Search Jokes
+        </a>
+      </div>
+    </div>
+
   </form>
 </template>
 
@@ -23,4 +33,5 @@ export default {
 </script>
 
 <style>
+
 </style>
